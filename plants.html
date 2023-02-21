@@ -1,66 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstrap</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
 </head>
+
 <body>
   <h3>Plants by Raghupathi Reddy Rupanagudi</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        R
+      </div>
+      <div class="col-sm-2">
+        U
+      </div>
+      <div class="col-sm-2">
+        P
+      </div>
+      <div class="col-sm-2">
+        A
+      </div>
+      <div class="col-sm-2">
+        N
+      </div>
+      <div class="col-sm-2">
+        A
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        REHMANNIA
+      </div>
+      <div class="col-md">
+        ULEX
+      </div>
+      <div class="col-md">
+        PAEONIA
+      </div>
+      <div class="col-md">
+        ABELMOSCHUS
+      </div>
+      <div class="col-md">
+        NEPETA
+      </div>
+      <div class="col-md">
+        ABRUS
+      </div>
+      <P>
+        As the size of screen reduces, the plant names row breaks first.The reason for this is because of using divs in
+        the document and simultaneously
+        reducing the screen size in the browser.Because of this the class with md colums having plant names breaks first
+        and then the class with sm columns
+        having the letters breaks in BootStrap.
+      </P>
+
+      <div class="container">
+        <img class="img-fluid" src="Rehmannia.jpg" height="300px" width="300px" />
+        <img class="img-fluid" src="Ulex.jpg" height="300px" width="300px" />
+        <img class="img-fluid" src="Paeonia.jpg" height="300px" width="300px" />
+      </div>
+
+      <div class="container">
+        <img class="img-thumbnail" src="Rehmannia.jpg" height="300" width="300" />
+        <img class="img-thumbnail" src="Ulex.jpg" height="300" width="300" />
+        <img class="img-thumbnail" src="Paeonia.jpg" height="300" width="300" />
+      </div>
+    </div>
+
     <div class="container">
-        <div class="row">
-          <div class="col-sm-2">
-            R
-          </div>
-          <div class="col-sm-2">
-            U
-          </div>
-          <div class="col-sm-2">
-            P
-          </div>
-          <div class="col-sm-2">
-            A
-          </div>
-          <div class="col-sm-2">
-            N
-          </div>
-          <div class="col-sm-2">
-            A
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md">
-            REHMANNIA
-          </div>
-          <div class="col-md">
-            ULEX
-          </div>  
-          <div class="col-md">
-            PAEONIA
-          </div>
-          <div class="col-md">
-            ABELMOSCHUS
-          </div>
-          <div class="col-md">
-            NEPETA
-          </div>
-          <div class="col-md">
-            ABRUS
-          </div>
-          <P>
-            As the size of screen reduces, the plant names row breaks first.The reason for this is because of using divs in the document and simultaneously 
-            reducing the screen size in the browser.Because of this the class with md colums having plant names breaks first and then the class with sm columns
-            having the letters breaks in BootStrap. 
-          </P>
+      <table class="table table-success table-striped" style="text-align: center;">
+        <caption style="color:black">Bootstrap table</caption><br>
+        <thead class="table-primary">
+          <tr style="color:rgb(248, 8, 28)">
+            <th scope="col">Letter</th>
+            <th scope="col">Plant</th>
+            <th scope="col">Mountain</th>
+            <th scope="col">Lake</th>
+          </tr>
+        </thead>
+        <tbody class="table-warning">
+          <tr class="table-danger">
+            <td>R</td>
+            <td>REHMANNIA</td>
+            <td>Rajabasa</td>
+            <td>Red Lake</td>
+          </tr>
+          <tr class="table-light">
+            <td>U</td>
+            <td>ULEX</td>
+            <td>Ubinas</td>
+            <td>Ubinskoe</td>
+          </tr>
+          <tr class="table-success">
+            <td>P</td>
+            <td>PAEONIA</td>
+            <td>Pandim</td>
+            <td>Paajarvi</td>
+          </tr>
+          <tr class="table-info">
+            <td>A</td>
+            <td>ABELMOSCHUS</td>
+            <td>Ampato</td>
+            <td>Aberdeen</td>
+          </tr>
+          <tr class="table-secondary">
+            <td>N</td>
+            <td>NEPETA</td>
+            <td>Naltar peak</td>
+            <td>Nasser</td>
+          </tr>
+          <tr class="table-dark">
+            <td>A</td>
+            <td>ABRUS</td>
+            <td>Aconcagua</td>
+            <td>Abaya</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
 
 
 </body>
+
 </html>
